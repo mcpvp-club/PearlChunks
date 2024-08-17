@@ -1,8 +1,5 @@
-import xyz.jpenilla.resourcefactory.paper.PaperPluginYaml
-
 plugins {
     `java-library`
-    id("io.papermc.paperweight.userdev") version "1.7.2"
     id("xyz.jpenilla.resource-factory-paper-convention") version "1.1.2" // Generates plugin.yml based on the Gradle config
 }
 
@@ -17,11 +14,11 @@ java {
 
 repositories {
     mavenCentral()
-    maven("https://repo.codemc.org/repository/maven-public/")
+    maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
-    paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
 }
 
 tasks {
