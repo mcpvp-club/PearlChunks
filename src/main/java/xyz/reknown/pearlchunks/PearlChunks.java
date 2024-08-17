@@ -5,6 +5,7 @@ import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.entity.EnderPearl;
 import org.bukkit.plugin.java.JavaPlugin;
+import xyz.reknown.pearlchunks.bstats.Metrics;
 import xyz.reknown.pearlchunks.listeners.EntitySpawnListener;
 
 import java.util.Iterator;
@@ -48,6 +49,8 @@ public class PearlChunks extends JavaPlugin {
         }, 1L, 1L);
 
         getServer().getPluginManager().registerEvents(new EntitySpawnListener(), this);
+
+        new Metrics(this, 23073);
     }
 
     public Map<EnderPearl, Set<ChunkCoords>> pearls() {
