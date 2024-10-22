@@ -1,3 +1,5 @@
+**After 1.21.2, this plugin is no longer required as ender pearls now load & tick chunks in a 3x3 chunk area.**
+
 # PearlChunks
 When ender pearls travel to unloaded chunks in Minecraft, they stop and never land until the chunk is loaded by a player.
 This Paper plugin loads the chunks that ender pearls are in when they are in unloaded chunks to prevent this issue.
